@@ -1,0 +1,268 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="Music_store">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="Store_details"/>
+                <xs:element ref="Music"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Store_details">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Store_name" type="xs:string"/>
+                <xs:element name="logo" type="xs:string"/>
+                <xs:element name="address" type="xs:string"/>
+                <xs:element name="Telephone_number" type="xs:string"/>
+                <xs:element name="website" type="xs:string"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Music">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="jazzs"/>
+                <xs:element ref="PopMusics"/>
+                <xs:element ref="Rocks"/>
+                <xs:element ref="CountryMusics"/>
+                <xs:element ref="DubSteps"/>
+                <xs:element ref="Traditionals"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jazzs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element ref="jazz" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jazz">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name"/>
+                <xs:element ref="image"/>
+                <xs:element ref="Director"/>
+                <xs:element name="Producer" type="xs:string"/>
+                <xs:element ref="Writer"/>
+                <xs:element ref="Singer"/>
+				<xs:element ref="Release_year"/>
+                <xs:element ref="Detailed_Info"/>
+            </xs:sequence>
+            <xs:attribute name="Music_ID" type="xs:integer"/>
+            <xs:attribute name="jazz_ID" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="PopMusics">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element ref="PopMusic" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="PopMusic">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name"/>
+                <xs:element ref="image"/>
+                <xs:element ref="Director"/>
+                <xs:element name="Producer" type="xs:string"/>
+                <xs:element ref="Writer"/>
+                <xs:element ref="Singer"/>
+				<xs:element ref="Release_year"/>
+                <xs:element ref="Detailed_Info"/>
+            </xs:sequence>
+            <xs:attribute name="Music_ID" type="xs:integer"/>
+            <xs:attribute name="PopMusic_ID" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Rocks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element ref="Rock" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Rock">
+        <xs:complexType>
+            <xs:sequence>
+                 <xs:element ref="Name"/>
+                <xs:element ref="image"/>
+                <xs:element ref="Director"/>
+                <xs:element name="Producer" type="xs:string"/>
+                <xs:element ref="Writer"/>
+                <xs:element ref="Singer"/>
+				<xs:element ref="Release_year"/>
+                <xs:element ref="Detailed_Info"/>
+            </xs:sequence>
+            <xs:attribute name="Music_ID" type="xs:integer"/>
+            <xs:attribute name="Rock_ID" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CountryMusics">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element ref="CountryMusic" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CountryMusic">
+        <xs:complexType>
+            <xs:sequence>
+                  <xs:element ref="Name"/>
+                <xs:element ref="image"/>
+                <xs:element ref="Director"/>
+                <xs:element name="Producer" type="xs:string"/>
+                <xs:element ref="Writer"/>
+                <xs:element ref="Singer"/>
+				<xs:element ref="Release_year"/>
+                <xs:element ref="Detailed_Info"/>
+            </xs:sequence>
+            <xs:attribute name="Music_ID" type="xs:integer"/>
+            <xs:attribute name="CountryMusic_ID" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="DubSteps">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element ref="DubStep" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="DubStep">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name"/>
+                <xs:element ref="image"/>
+                <xs:element ref="Director"/>
+                <xs:element name="Producer" type="xs:string"/>
+                <xs:element ref="Writer"/>
+                <xs:element ref="Singer"/>
+				<xs:element ref="Release_year"/>
+                <xs:element ref="Detailed_Info"/>
+            </xs:sequence>
+            <xs:attribute name="Music_ID" type="xs:integer"/>
+            <xs:attribute name="DubStep_ID" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Traditionals">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element ref="Traditional" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Traditional">
+        <xs:complexType>
+            <xs:sequence>
+                 <xs:element ref="Name"/>
+                <xs:element ref="image"/>
+                <xs:element ref="Director"/>
+                <xs:element name="Producer" type="xs:string"/>
+                <xs:element ref="Writer"/>
+                <xs:element ref="Singer"/>
+				<xs:element ref="Release_year"/>
+                <xs:element ref="Detailed_Info"/>
+            </xs:sequence>
+            <xs:attribute name="Music_ID" type="xs:integer"/>
+            <xs:attribute name="Traditional_ID" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Name">
+        <xs:simpleType>
+            <xs:restriction base="xs:string"> 
+                <xs:whiteSpace value="preserve"/>              
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:attribute name='id' type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Director">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:whiteSpace value="preserve"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="Producer">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+             <xs:whiteSpace value="preserve"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="Writer">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:whiteSpace value="preserve"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+	
+ <xs:element name="Singer">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:whiteSpace value="preserve"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+	
+	<xs:element name="Release_year">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+	
+    <xs:element name="Detailed_Info">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Album" type="xs:string"/>
+                <xs:element name="Length"/>
+                <xs:element name="Publisher" type="xs:string"/>
+                <xs:element name="Artist" type="xs:string"/>
+                <xs:element name="Editor" type="xs:string"/>
+                <xs:element name="Licensed_to" type="xs:string" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="Length">
+        <xs:simpleType>
+            <xs:restriction base ="xs:string">
+                <xs:pattern value="Length: [0-9]+"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+</xs:schema>
