@@ -1,0 +1,230 @@
+Music_store{
+    display: block;
+   background:url(background.JPG);
+   background-size: 100%;
+    text-align: center;
+    padding: 15px;
+	background-repeat: repeat;
+    overflow-x:hidden; 
+	position: relative;
+}
+
+Store_name{
+    text-align:center;
+    font-family:courier,arial,helvetica;
+    font-weight: 500;
+    font-size: 90px;
+    padding: 5px; 
+    color: white;
+    margin-bottom: 20px;
+}
+
+logo{
+    content: url(images/logo.png);
+    width:200px;
+    height:200px;
+    float: left;
+}
+
+Store_name,logo{
+    display: inline-block;
+}
+
+address,Telephone_number,website{
+    font-family: Arial, Helvetica, sans-serif;
+    color: White;
+    display: block;
+    width: 98%; 
+    font-size: 15pt;
+    padding: 2px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+Music{
+    display:block;
+    padding: 10px; 
+    margin-left: 5px;
+	 border: 1px solid darkred;
+    transition: transform .3s ease;
+}
+
+title{
+    text-align: center;
+    width: 30%;
+    display: block;
+    font-size: 35px;
+    font-family: "Comic Sans Ms";
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: white;
+}
+
+Name{
+    display: block;
+    font-size: 30pt;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+Director{
+    display: block;
+    text-align: left;
+    font-size: 20pt;
+    padding: 10px;
+    margin-left:50px;
+    color: white;
+}
+
+Description{
+    display:block;
+	width:650px;
+	height:80px;
+	font-family: "Times New Roman", Times, serif; 
+    font-size:15pt;
+    margin-right:50px;
+    text-align: justify;
+    margin-left:50px;
+    padding: 10px;
+    background-color: darkgrey;
+    color:#212121;
+    border-radius: 5px;
+}
+
+Producer,Writer,Singer, Release_year, Description{
+    display:block;
+    font-size:15pt;
+    padding: 10px;
+    text-align: left;
+    margin-left: 50px;
+    color: white;
+}
+
+Detailed_Info{
+    display:block;
+    font-size:15pt;
+    padding: 10px;
+    color: white;
+}
+
+Album, Length, Publisher, Artist, Editor, Licensed_to{
+    display: list-item;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 50px;
+    padding-bottom: 5px;
+}
+
+jazzs, PopMusics, Rocks, CountryMusics, DubSteps, Traditionals{
+    text-align: center;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+jazz, popMusic, rock, countryMusic, dubStep, traditional{
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    transition: transform .3s ease;
+}
+
+image[id='1']{
+    content: url(images/1.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='2']{
+    content: url(images/2.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='3']{
+    content: url(images/3.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='4']{
+    content: url(images/4.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='5']{
+    content: url(images/5.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='6']{
+    content: url(images/6.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='7']{
+    content: url(images/7.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='8']{
+    content: url(images/8.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='9']{
+    content: url(images/9.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='10']{
+    content: url(images/10.jpeg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='11']{
+    content: url(images/11.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+image[id='12']{
+    content: url(images/12.jpg);
+    width: 500px;
+    height: 300px;
+}
+
+shop_name:hover{
+    font-size: 90px;
+    color: white;
+}
+
+logo:hover{
+    transform: scale(1.1);
+}
+title:hover{
+    color:white;
+}
+
+image:hover{
+    transition: transform .3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+}
+
+jazzs:hover,PopMusics:hover,Rocks:hover,CountryMusics:hover,DubSteps:hover,Traditionals:hover{
+    border: 1px solid white;
+}
