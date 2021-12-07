@@ -1,0 +1,50 @@
+<!ELEMENT Music_store (Store_details, Music)>
+<!ELEMENT Store_details (logo, Store_name, address, Telephone_number, website)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT Store_name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT Telephone_number (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT Music (Jazz,  PopMusic, Rock, CountryMusic, DubStep, Traditional)>
+<!ELEMENT jazzs (title, jazz+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT jazz (Name, image, Director, Producer, Writer, Singer, Release_year, Description, Detailed_Info)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Singer (#PCDATA)>
+<!ELEMENT Release_year (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Detailed_Info (Album, Length, Publisher?, Artist, Editor?, Licensed_to)>
+<!ELEMENT Album (#PCDATA)>
+<!ELEMENT Length (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT Editor (#PCDATA)>
+<!ELEMENT Licensed_to (#PCDATA)>
+<!ELEMENT Rocks (title, rock+)>
+<!ELEMENT rock (Name, image, Director, Producer, Writer, Singer, Release_year, Description, Detailed_Info)>
+<!ELEMENT PopMusics (title, popMusic+)>
+<!ELEMENT popMusic (Name, image, Director, Producer, Writer, Singer, Release_year, Description, Detailed_Info)>
+<!ELEMENT DubSteps (title, dubStep+)>
+<!ELEMENT dubStep (Name, image, Director, Producer, Writer, Singer, Release_year, Description, Detailed_Info)>
+<!ELEMENT CountryMusics (title, countryMusic+)>
+<!ELEMENT countryMusic (Name, image, Director, Producer, Writer, Singer, Release_year, Description, Detailed_Info)>
+<!ELEMENT Traditionals (title, traditional+)>
+<!ELEMENT traditional (Name, image, Director, Producer, Writer, Singer, Release_year, Description, Detailed_Info)>
+
+<!ATTLIST jazz Music_ID CDATA #REQUIRED>
+<!ATTLIST jazz jazz_ID CDATA #REQUIRED>
+<!ATTLIST rock Rock_ID CDATA #REQUIRED>
+<!ATTLIST rock Music_ID CDATA #REQUIRED>
+<!ATTLIST popMusic Music_ID CDATA #REQUIRED>
+<!ATTLIST popMusic PopMusic_ID CDATA #REQUIRED>
+<!ATTLIST dubStep Music_ID CDATA #REQUIRED>
+<!ATTLIST dubStep DubStep_ID CDATA #REQUIRED>
+<!ATTLIST countryMusic Music_ID CDATA #REQUIRED>
+<!ATTLIST countryMusic CountryMusic_ID CDATA #REQUIRED>
+<!ATTLIST traditional Music_ID CDATA #REQUIRED>
+<!ATTLIST traditional Traditional_ID CDATA #REQUIRED>
+<!ATTLIST image id CDATA #REQUIRED>
